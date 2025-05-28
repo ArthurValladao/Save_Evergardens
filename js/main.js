@@ -167,14 +167,14 @@ function atualizarMedalhasDisplay() {
   medalsDisplay.innerHTML = "Resgatados: ";
 
   const medalhaImgs = [
-    "img/medalha1.png",
+    "/img/ALEXPNG.png",
     "/img/ISAACPNG.png",
     "/img/ElliotPNG.png",
     "/img/WENDDYPNG.png",
-    "/img/zozoPNG.png",
+    "/img/ZOZOPNG.png",
     "/img/RucasCPNG.png",
     "/img/CASSIDYCHIBBIPNG.png",
-    "img/medalha7.png",
+    "/img/MAVCHIBBIPNG.png",
   ];
 
   for (let i = 0; i < medalhasCount; i++) {

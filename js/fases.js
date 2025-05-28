@@ -151,36 +151,87 @@ diz então, o que é sem se mostrar?`,
     medalha: "🥉",
     characters: [
       {
-        id: "melissandre",
-        name: "Melissandre",
-        image: "img/personagem9.png",
-        enigma:
-          "Tenho cidades, mas não casas. Montanhas, mas não árvores. E água, mas não peixes. O que sou?",
-        resposta: "um mapa",
+        id: "lapide",
+        name: "Primeira Lápide",
+        image: "/img/Lapide.png",
+        enigma: `Com passos lentos, em solene cortejo,
+As almas se unem num último ensejo.
+Vestes escuras, rostos molhados de pranto,
+Ecoa um lamento, um desolado canto.
+Flores sem cor, em leito de despedida,
+A terra se abre para uma vida finda.
+Palavras vazias, consolo que falha,
+Enquanto a chama da existência se atrapalha.
+O cheiro de terra úmida, o silêncio que oprime,
+A derradeira morada, onde a alma se exprime.
+Um adeus sussurrado, um laço rompido,
+No pó que retorna, um ciclo cumprido.
+
+Que solene passagem, a humanidade celebra em dor?`,
+        resposta: "Funeral",
         solved: false,
       },
       {
-        id: "morcego",
-        name: "Morcego Guardião",
-        image: "img/personagem10.png",
-        enigma: "O que é, o que é: Tem olhos, mas não vê?",
-        resposta: "o furacão",
+        id: "lapide2",
+        name: "Segunda Lápide",
+        image: "/img/Lapide.png",
+        enigma: `Sou um livro sem páginas, mas com mil histórias,
+Escritas em lágrimas, cheias de glórias.
+Não tenho cheiro, mas trago o aroma de quem se foi,
+Um fardo pesado, que a alma constrói.
+No peito apertado, moro e habito,
+Um eco distante, um som proibido.
+Às vezes doce, outras vezes amarga,
+A ferida aberta que o tempo não larga.
+Sou o que resta, quando tudo se desfaz,
+A voz que murmura, em silêncio e em paz.
+
+O que sou eu, esse peso que o coração abriga?`,
+        resposta: "Memória",
         solved: false,
       },
       {
-        id: "tumulo",
-        name: "Espírito do Túmulo",
-        image: "img/personagem11.png",
-        enigma: "O que é, o que é: Nasce grande e morre pequeno?",
-        resposta: "o lápis",
+        id: "Lapide3",
+        name: "Terceiro Lápide",
+        image: "/img/Lapide.png",
+        enigma: `No vazio que deixaste, uma melodia paira, 
+Um cântico triste, que o vento desvaira. 
+Não sou sombra, mas preencho o espaço que outrora 
+Transbordava de ti, e agora chora. 
+Sou a pontada que aperta, um nó que não se desfaz, 
+A lembrança vívida de tudo que se jaz. 
+Em cada recanto, respiro teu ar que não mais flui, 
+Em cada suspiro, a ausência me possui. 
+Sou o peso no peito, a lágrima que escorre, 
+A vela acesa que em pranto se consome. 
+Não me tocas, mas sou toque constante, 
+De um passado que insiste, eterno e distante.
+
+Que sentimento sou eu, que tece a teia da dor?`,
+        resposta: "Saudade",
         solved: false,
       },
       {
-        id: "zumbi",
-        name: "Zumbi Errante",
-        image: "img/personagem12.png",
-        enigma: "O que é, o que é: Sobe e desce, mas não sai do lugar?",
-        resposta: "a escada",
+        id: "Dama",
+        name: "Dama de vermelho",
+        image: "/img/Dama.png",
+        enigma: `Não tenho forma, mas transformo o que é visto, 
+Em pó e silêncio, num leito previsto. 
+Sou o véu que desce, a noite sem estrelas, 
+O fim da jornada, as últimas querelas. 
+O corpo que outrora vibrava e sentia, 
+Agora repousa em gélida apatia. 
+O sopro que anima, se esvai no vazio, 
+Deixando para trás um eterno calafrio. 
+Não sou inimiga, mas encontro final, 
+A paz derradeira, o sono imortal. 
+Em meu abraço, a vida se esvai sem alarde, 
+E o tempo, por um instante, parece que arde. 
+Sem som, sem cor, apenas o grande nada, 
+A fronteira que toda alma tem que ter cruzada.
+
+O que sou eu, o grande e derradeiro fim?`,
+        resposta: "Morte",
         solved: false,
       },
     ],
@@ -363,4 +414,4 @@ diz então, o que é sem se mostrar?`,
       { texto: "Temos os resgatados do nosso lado!", correta: true },
     ],
   },
-]; 
+];
