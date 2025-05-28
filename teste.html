@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio das Sete Medalhas</title>
+    <link rel="stylesheet" href="./css/teste.css" />
+  </head>
+  <body>
+    <div class="start-screen" id="startScreen">
+      <div class="logo">
+        <img src="./img/logo.png" alt="logo" class="logo-image" />
+      </div>
+      <button class="start-button" onclick="startGame()">Jogar</button>
+      <button class="credits-button" onclick="showCredits()">Créditos</button>
+      <div class="credits-info" id="creditsInfo" style="display: none">
+        <p>Desenvolvido por Arthur Valladão Gomes</p>
+        <p>Recursos utilizados: Html, Css e JS</p>
+        <button onclick="hideCredits()">Voltar</button>
+      </div>
+    </div>
+
+    <div class="game-container" id="gameContainer" style="display: none">
+      <div class="medals" id="medals">Medalhas: 🏅 x0</div>
+      <div class="container">
+        <div class="character" id="character"></div>
+        <div class="question" id="question"></div>
+        <input type="text" id="answerInput" placeholder="Digite sua resposta" />
+        <br />
+        <button onclick="checkAnswer()">Responder</button>
+        <div id="feedback"></div>
+      </div>
+    </div>
+
+    <script src="./js/teste.js"></script>
+  </body>
+</html>

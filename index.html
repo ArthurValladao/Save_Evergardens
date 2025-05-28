@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo de Diálogo</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="play-screen">
+      <img src="img/logo.png" alt="Logo do Jogo" class="logo" />
+      <button id="play-button">Play</button>
+      <button id="credits-button">Créditos</button>
+      <div id="credits-box" class="hidden">
+        <p>Feito por: Arthur Valladão Gomes<br />Arte: Arthur Valladão Gomes</p>
+        <button id="close-credits">Fechar</button>
+      </div>
+    </div>
+
+    <div id="game" class="hidden">
+      <div class="scene-area" id="sceneArea"></div>
+
+      <div class="enigma-modal" id="enigmaModal">
+        <div class="modal-content">
+          <span class="close-button" onclick="closeEnigmaModal()">&times;</span>
+          <div class="character-name" id="modalCharacterName"></div>
+          <div class="question" id="modalQuestion"></div>
+          <input
+            type="text"
+            id="answerInput"
+            placeholder="Digite sua resposta"
+          />
+          <br />
+          <button onclick="checkAnswer()">Responder</button>
+          <div id="feedback"></div>
+        </div>
+      </div>
+
+      <div id="medals" class="medals">Resgatados: 🏅 x0</div>
+    </div>
+
+    <script src="js/fases.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/movimento.js"></script>
+    <script src="js/telaini.js"></script>
+  </body>
+</html>

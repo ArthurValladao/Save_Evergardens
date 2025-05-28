@@ -1,0 +1,364 @@
+/* css/style.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #1e362b, #3d0c57);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: background-image 0.5s ease-in-out,
+    background-color 0.5s ease-in-out;
+  overflow: hidden; /* Evita barras de rolagem */
+}
+
+/* Esconde elementos inicialmente */
+.hidden {
+  display: none !important;
+}
+
+/* Estilos da Tela de Início */
+#play-screen {
+  /* Alterei de .start-screen para #play-screen */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #001f00, #3f0557);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  pointer-events: auto;
+}
+
+#play-screen.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.logo {
+  /* Estilo para a imagem do logo */
+  width: 300px;
+  height: auto;
+  margin-bottom: 40px;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+#play-button,
+#credits-button,
+#credits-box button {
+  padding: 15px 40px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  min-width: 180px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#play-button {
+  background-color: #bb158c;
+  color: white;
+}
+
+#play-button:hover {
+  background-color: #9a1273;
+  transform: scale(1.05);
+}
+
+#credits-button {
+  background-color: #bb158c;
+  color: white;
+}
+
+#credits-button:hover {
+  background-color: #9a1273;
+  transform: scale(1.05);
+}
+
+#credits-box {
+  margin-top: 20px;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #eee;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 400px;
+}
+
+#credits-box p {
+  margin-bottom: 15px;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+#credits-box button {
+  background-color: #6c757d;
+  color: white;
+}
+
+#credits-box button:hover {
+  background-color: #5a6268;
+  transform: scale(1.05);
+}
+
+/* Estilos do Contêiner do Jogo */
+#game {
+  /* Alterei de .game-container para #game */
+  position: relative; /* Importante para posicionar elementos internos */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Para não mostrar elementos fora da área do jogo */
+  opacity: 0; /* Começa invisível para o efeito de fade-in */
+  transition: opacity 0.5s ease-in; /* Transição para o efeito de fade-in */
+  background-size: cover; /* Para as imagens de fundo das fases */
+  background-position: center;
+}
+
+#game:not(.hidden) {
+  /* Torna o game visível após o fade-out da tela inicial */
+  opacity: 1;
+}
+
+/* Nova área para exibir os personagens (Scene) */
+.scene-area {
+  width: 100%;
+  height: 100%; /* Ocupa toda a altura do #game */
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex; /* Para centralizar ou posicionar os personagens */
+  flex-wrap: wrap; /* Para quebra de linha se tiver muitos personagens */
+  justify-content: space-around; /* Distribui os personagens */
+  align-items: flex-end; /* Alinha os personagens na parte inferior */
+  padding-bottom: 50px; /* Espaço para o player */
+  box-sizing: border-box;
+  z-index: 1; /* Abaixo do modal */
+}
+
+/* Estilo para cada personagem (sprite) */
+.character-sprite {
+  width: 300px; /* Tamanho base dos personagens */
+  height: auto;
+  cursor: pointer;
+  margin: 15px; /* Espaçamento entre os personagens */
+  transition: transform 0.2s ease, opacity 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(
+    0 0 8px rgba(0, 0, 0, 0.5)
+  ); /* Pequena sombra para destaque */
+}
+
+.character-sprite:hover {
+  transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.character-sprite.solved {
+  opacity: 0.5; /* Personagem resolvido fica semi-transparente */
+  pointer-events: none; /* Não pode ser clicado novamente */
+  filter: grayscale(80%); /* Fica cinza */
+}
+
+/* Estilo para o Player */
+
+/* Estilo para o NPC (se você ainda tiver NPCs separados) */
+.npc {
+  /* Pode ser removido se todos os "NPCs" forem character-sprites */
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: green; /* Verde para NPCs */
+  border-radius: 50%;
+  background-image: url("../img/npc-default.png"); /* Exemplo: imagem para NPC */
+  background-size: cover;
+  background-position: center;
+  z-index: 4;
+}
+
+/* Estilos do Modal do Enigma (janela pop-up) */
+.enigma-modal {
+  display: none; /* <--- GARANTA QUE ESTÁ "NONE" POR PADRÃO AQUI */
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none; /* Esta linha será sobreposta pelo JS quando o modal for aberto */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: rgba(20, 0, 30, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  max-width: 500px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.9);
+  border: 2px solid #bb158c;
+  color: #f8f8f8;
+
+}
+
+.close-button {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #ff007f;
+  text-decoration: none;
+}
+
+.character-name {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  color: #ffc0cb;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.question {
+  margin: 20px 0;
+  font-size: 1.2em;
+  line-height: 1.4;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #aaa;
+  text-align: center;
+}
+
+input {
+  padding: 12px;
+  width: 85%;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  text-align: center;
+  font-size: 1.1em;
+  outline: none;
+}
+
+input:focus {
+  border-color: #bb158c;
+  box-shadow: 0 0 8px rgba(187, 21, 140, 0.6);
+}
+
+.modal-content button {
+  /* Estilo específico para o botão dentro do modal */
+  margin-top: 25px;
+  padding: 14px 30px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.15em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modal-content button:hover {
+  background-color: #e04a9d;
+  transform: scale(1.03);
+}
+
+/* Estilo para o feedback (correto/incorreto) */
+#feedback {
+  margin-top: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para o contador de medalhas */
+.medals {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 12px 18px;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 1.1em;
+}
+
+/* Classes de fundo para as fases (suas imagens) */
+#game.fase-0-bg {
+  background-image: url("../img/casa.png");
+} /* Adicionei ../ para o caminho correto */
+#game.fase-1-bg {
+  background-image: url("../img/ilha_purpura.png");
+}
+#game.fase-2-bg {
+  background-image: url("../img/cemiterio_jogo.png");
+}
+#game.fase-3-bg {
+  background-image: url("../img/acropole.png");
+}
+#game.fase-4-bg {
+  background-image: url("../img/Akin.png");
+}
+#game.fase-5-bg {
+  background-image: url("../img/vulcao.png");
+}
+#game.fase-6-bg {
+  background-image: url("../img/mar.png");
+}
+#game.fase-7-bg {
+  background-image: url("../img/Aterum.png");
+} /* Boss Final */
+
+/* Estilos para a mensagem final */
+.final-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  text-align: center;
+  z-index: 100;
+}
+.medal-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}

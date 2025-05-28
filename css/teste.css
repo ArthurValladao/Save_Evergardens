@@ -1,0 +1,266 @@
+/* style.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Degradê da imagem: do verde escuro para o roxo escuro */
+  background-image: linear-gradient(to right, #1e362b, #3d0c57);
+  background-size: cover; /* Garante que o degradê cubra toda a área */
+  background-repeat: no-repeat; /* Evita repetição */
+  background-position: center center; /* Centraliza o degradê */
+  transition: background-image 0.5s ease-in-out,
+    background-color 0.5s ease-in-out;
+}
+
+/* Estilos da Tela de Início */
+.start-screen {
+  position: fixed; /* Fixa a tela de início sobre todo o conteúdo */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* Degradê específico para a tela de início (como na imagem) */
+  background: linear-gradient(
+    135deg,
+    #001f00,
+    #3f0557
+  ); /* Ajustado para um degradê escuro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  opacity: 1; /* Garante que a tela de início começa totalmente visível */
+  transition: opacity 0.5s ease-out; /* Transição para o efeito de fade-out */
+  pointer-events: auto; /* Permite cliques nos botões */
+}
+
+/* Classe para o efeito de fade-out */
+.start-screen.fade-out {
+  opacity: 0; /* Torna a tela invisível */
+  pointer-events: none; /* Desabilita cliques em elementos invisíveis */
+}
+
+.logo {
+  margin-bottom: 40px;
+}
+
+/* Se você usar uma imagem para o logo */
+.logo-image {
+  width: 300px; /* Ajuste o tamanho da imagem do logo conforme necessário */
+  height: auto;
+  filter: drop-shadow(
+    0 0 10px rgba(255, 255, 255, 0.5)
+  ); /* Efeito de brilho/sombra para destacar o logo */
+}
+
+/* Se você ainda usar H1 para o logo */
+.logo h1 {
+  font-size: 3em;
+  color: #fff; /* Cor do texto mais clara para o fundo escuro */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Sombra mais intensa */
+}
+
+.start-button,
+.credits-button,
+.credits-info button {
+  /* Aplica alguns estilos base para todos os botões */
+  padding: 15px 40px; /* Aumentei o padding */
+  font-size: 1.1em; /* Ajustei o tamanho da fonte */
+  border: none;
+  border-radius: 10px; /* Mais arredondado */
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+  margin: 10px;
+  transition: transform 0.2s ease, background-color 0.3s ease; /* Transição para hover e transform */
+  min-width: 180px; /* Largura mínima para os botões */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+}
+
+.start-button {
+  background-color: #bb158c; /* Rosa mais forte */
+  color: white;
+}
+
+.start-button:hover {
+  background-color: #9a1273; /* Tom mais escuro ao passar o mouse */
+  transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+}
+
+.credits-button {
+  background-color: #bb158c; /* Mesma cor para consistência com o botão jogar */
+  color: white;
+}
+
+.credits-button:hover {
+  background-color: #9a1273; /* Mesma cor de hover */
+  transform: scale(1.05); /* Efeito de escala */
+}
+
+.credits-info {
+  margin-top: 20px;
+  padding: 25px; /* Aumentei o padding */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.85
+  ); /* Fundo mais escuro e opaco para os créditos */
+  color: #eee; /* Cor do texto mais clara */
+  border-radius: 12px; /* Mais arredondado */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra mais pronunciada */
+  text-align: center;
+  max-width: 400px;
+}
+
+.credits-info p {
+  margin-bottom: 15px;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.credits-info button {
+  background-color: #6c757d; /* Cor de botão "voltar" */
+  color: white;
+}
+
+.credits-info button:hover {
+  background-color: #5a6268;
+  transform: scale(1.05);
+}
+
+/* Estilos do Contêiner do Jogo */
+.game-container {
+  display: none; /* Inicialmente escondido */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Garante que ocupa toda a altura quando visível */
+  width: 100%; /* Garante que ocupa toda a largura quando visível */
+  position: absolute; /* Para sobrepor a tela inicial, se necessário */
+  top: 0;
+  left: 0;
+  opacity: 0; /* Começa invisível para o efeito de fade-in */
+  transition: opacity 0.5s ease-in; /* Transição para o efeito de fade-in */
+}
+
+/* Classe para tornar o game-container visível com fade-in */
+.game-container.visible {
+  opacity: 1;
+}
+
+.container {
+  padding: 30px; /* Aumentei o padding */
+  border-radius: 15px; /* Bordas mais arredondadas */
+  max-width: 550px; /* Ajustei a largura máxima */
+  text-align: center;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Fundo escuro semi-transparente para a janela do jogo */
+  color: #f8f8f8; /* Cor do texto mais clara */
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8); /* Sombra mais intensa */
+}
+
+.character {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.4em; /* Aumentei o tamanho da fonte */
+  color: #ffc0cb; /* Cor para o nome do personagem (rosa claro) */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.question {
+  margin: 20px 0;
+  font-size: 1.2em; /* Aumentei o tamanho da fonte */
+  line-height: 1.4;
+  color: #fff; /* Cor do texto do enigma */
+}
+
+input::placeholder {
+  color: #aaa;
+  text-align: center;
+}
+
+input {
+  padding: 12px; /* Aumentei o padding */
+  width: 85%; /* Ajustei a largura */
+  border: 1px solid #555;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.15); /* Fundo mais transparente */
+  color: #fff;
+  text-align: center;
+  font-size: 1.1em;
+  outline: none; /* Remove o contorno ao focar */
+}
+
+input:focus {
+  border-color: #bb158c; /* Borda rosa ao focar */
+  box-shadow: 0 0 8px rgba(187, 21, 140, 0.6); /* Sombra rosa ao focar */
+}
+
+/* Botão de Responder */
+button {
+  margin-top: 25px; /* Aumentei a margem superior */
+  padding: 14px 30px; /* Aumentei o padding */
+  background-color: #ff69b4; /* Rosa vibrante */
+  color: white;
+  border: none;
+  border-radius: 10px; /* Mais arredondado */
+  cursor: pointer;
+  font-size: 1.15em; /* Aumentei a fonte */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #e04a9d; /* Tom mais escuro ao passar o mouse */
+  transform: scale(1.03);
+}
+
+.medals {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.75); /* Fundo mais escuro */
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 10px; /* Mais arredondado */
+  padding: 12px 18px; /* Aumentei o padding */
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+  font-size: 1.1em;
+}
+
+/* Classes de fundo para as fases (suas imagens) */
+.fase-0-bg {
+  background-image: url("/img/ilha_purpura.png");
+}
+.fase-1-bg {
+  background-image: url("/img/cemiterio_jogo.png");
+}
+.fase-2-bg {
+  background-image: url("/img/acropole.png");
+}
+.fase-3-bg {
+  background-image: url("/img/Akin.png");
+}
+.fase-4-bg {
+  background-image: url("/img/mar.png");
+}
+.fase-5-bg {
+  background-image: url("/img/vulcao.png");
+}
+.fase-6-bg {
+  background-image: url("/img/Aterum.png");
+}
+
