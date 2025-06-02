@@ -3,7 +3,7 @@
 const fases = [
   {
     instruction:
-      "Interaja com todos os ecos nesta casa e resolva os enigmas para avançar! e lembre-se, um deles mente!",
+      "Interaja com todos os ecos nesta casa e resolva os enigmas para avançar! e lembre-se, um deles mente! após descobrir qual é o eco que mente você deve refazer os ecos para abrir o baú.",
     id: "casa", // ID único para a fase
     nome: "Casa do Alex",
     bodyClass: "fase-0-bg", // Classe de fundo para o #game
