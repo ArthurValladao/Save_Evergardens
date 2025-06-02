@@ -11,8 +11,6 @@ document.getElementById("play-button").addEventListener("click", () => {
     }, 500);
 });
 
-// ... (o restante do telaini.js) ...
-
 document.getElementById("credits-button").addEventListener("click", () => {
   document.getElementById("credits-box").classList.remove("hidden");
 });

@@ -2,6 +2,8 @@
 
 const fases = [
   {
+    instruction:
+      "Interaja com todos os ecos nesta casa e resolva os enigmas para avançar! e lembre-se, um deles mente!",
     id: "casa", // ID único para a fase
     nome: "Casa do Alex",
     bodyClass: "fase-0-bg", // Classe de fundo para o #game
@@ -54,6 +56,8 @@ const fases = [
     ],
   },
   {
+    instruction:
+      "Explore as cartas espalhadas pela ilha e descubra as respostas nos versos poéticos e siga a sabedoria dos ventos.",
     id: "ilha",
     nome: "Ilha Púrpura de Ícaro",
     bodyClass: "fase-1-bg",
@@ -145,6 +149,8 @@ diz então, o que é sem se mostrar?`,
     ],
   },
   {
+    instruction:
+      "Leia os versos das lápides e decifre os sentimentos que ecoam entre os mortos. Somente quem entende a dor pode avançar.",
     id: "cemiterio",
     nome: "Cemitério de Melissandre",
     bodyClass: "fase-2-bg",

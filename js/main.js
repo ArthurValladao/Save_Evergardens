@@ -33,7 +33,6 @@ function iniciarFase(faseIndex) {
 
   sceneArea.innerHTML = "";
 
-
   if (!fase.isBossFase) {
     sceneArea.style.display = "flex";
     fase.characters.forEach((character) => {
@@ -57,6 +56,10 @@ function iniciarFase(faseIndex) {
       document.getElementById("dialogo-box").classList.add("hidden");
     }
   } else {
+  }
+
+  if (fase.instruction) {
+    openInstructionModal(fase.instruction);
   }
 
   atualizarMedalhasDisplay();
@@ -102,6 +105,19 @@ function checkAnswer() {
       charSprite.removeEventListener("click", () =>
         openEnigmaModal(activeCharacter.id)
       );
+
+      // Criar elemento da resposta visível
+      const respostaTexto = document.createElement("div");
+      respostaTexto.textContent = `${activeCharacter.resposta}`;
+      respostaTexto.classList.add("resposta-visivel");
+      const wrapper = document.createElement("div");
+      wrapper.style.display = "flex";
+      wrapper.style.flexDirection = "column";
+      wrapper.style.alignItems = "center";
+
+      charSprite.replaceWith(wrapper);
+      wrapper.appendChild(charSprite);
+      wrapper.appendChild(respostaTexto);
     }
 
     setTimeout(() => {
@@ -184,4 +200,15 @@ function atualizarMedalhasDisplay() {
     medalhaImg.classList.add("medal-icon");
     medalsDisplay.appendChild(medalhaImg);
   }
+}
+function openInstructionModal(texto) {
+  const modal = document.getElementById("instructionModal");
+  const instructionText = document.getElementById("instructionText");
+  instructionText.textContent = texto;
+  modal.classList.remove("hidden");
+}
+
+function closeInstructionModal() {
+  const modal = document.getElementById("instructionModal");
+  modal.classList.add("hidden");
 }

@@ -214,7 +214,6 @@ body {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.9);
   border: 2px solid #bb158c;
   color: #f8f8f8;
-
 }
 
 .close-button {
@@ -361,4 +360,79 @@ input:focus {
   height: 50px;
   margin-right: 10px;
   vertical-align: middle;
+}
+.instruction-card {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(10, 10, 10, 0.6);
+  backdrop-filter: blur(8px);
+  z-index: 25;
+}
+
+.instruction-card.hidden {
+  display: none;
+}
+
+.instruction-glass {
+ background-image: linear-gradient(to right, #1e362b, #3d0c57);
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 350px;
+  text-align: center;
+  position: relative;
+}
+
+.instruction-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-image: linear-gradient(to right, #1e362b, #3d0c57);
+  padding: 5px 12px;
+  font-size: 0.85em;
+  border-radius: 12px;
+  color: #ccc;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.instruction-body {
+  font-size: 1.1em;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.instruction-glass button {
+  padding: 12px 25px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.instruction-glass button:hover {
+  background-color: #e04a9d;
+  transform: scale(1.05);
+}
+
+.resposta-visivel {
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -10px;
+  font-size: 1.1em;
+  text-shadow: 1px 1px 3px #000;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 8px;
 }
