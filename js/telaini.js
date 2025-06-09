@@ -7,7 +7,7 @@ document.getElementById("play-button").addEventListener("click", () => {
         playScreen.classList.add("hidden");
         document.getElementById("game").classList.remove("hidden");
         console.log("TRANSITION COMPLETE: Chamando iniciarFase(0).");
-        iniciarFase(0); // <--- AQUI O JOGO REALMENTE COMEÇA
+        iniciarFase(1); // <--- AQUI O JOGO REALMENTE COMEÇA
     }, 500);
 });
 
