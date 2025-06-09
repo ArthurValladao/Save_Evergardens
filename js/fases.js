@@ -249,36 +249,39 @@ O que sou eu, o grande e derradeiro fim?`,
     medalha: "🏅",
     characters: [
       {
-        id: "amith",
-        name: "Amith, a Sábia",
-        image: "img/personagem13.png",
+        id: "Aiolos",
+        name: "Aiolos, o Guardião",
+        image: "/img/Aiolo.png",
         enigma:
-          "Qual é o único número que, quando você tira metade dele, ele ainda continua o mesmo?",
-        resposta: "o número 8",
+          "não anda, mas guia. não fala, mas brilha. milhares me seguem, sem saber meu nome, sou velha como o tempo, sou voz de um enorme. nas noites, sou manto, sou verso, sou rastro, desenho caminhos em silêncio vasto. alguns dizem sorte, outros dizem sinal, mas quem me lê, conhece o astral.",
+        resposta: "Constelação",
         solved: false,
       },
       {
-        id: "guerreiro",
-        name: "Guerreiro Antigo",
+        id: "matriarca",
+        name: "Matriarca da luz",
         image: "img/personagem14.png",
-        enigma: "O que é, o que é: De dia tem 4 pés e de noite tem 6?",
-        resposta: "a cama",
+        enigma:
+          "Sou berço de estrelas, névoa e cor, misturo o caos com o esplendor. No silêncio do céu, me espalho lento, tecendo o brilho, guardo o tempo. Nem sólido, nem fluido, sou ponte e véu, dissolvo a luz, obscureço o céu. Sou nuvem de sonhos, infinita beleza, criadora e túmulo, em perfeita sutileza.",
+        resposta: "Nebulosa",
         solved: false,
       },
       {
         id: "oraculo",
-        name: "Oráculo Silencioso",
+        name: "Oráculo prismático",
         image: "img/personagem15.png",
-        enigma: "O que é, o que é: Voa sem ter asas e chora sem ter olhos?",
-        resposta: "a nuvem",
+        enigma:
+          "Sem mim, a luz é só uma cor, mas parto o mundo em múltiplo ardor. Sou ponte, sou filtro, sou arco no céu, deixo a ciência tocar o véu. Mas sou etéreo, fugaz, não tenho forma, apareço na chuva, na gota que transforma. Quem sou eu, que revelo o segredo, do espectro oculto e seu enredo?",
+        resposta: "Prisma",
         solved: false,
       },
       {
-        id: "grifo",
-        name: "Grifo da Montanha",
-        image: "img/personagem16.png",
-        enigma: "O que é, o que é: Quanto mais se perde, mais se tem?",
-        resposta: "o sono",
+        id: "amith",
+        name: "Amith, a Sábia",
+        image: "/img/Amith.png",
+        enigma:
+          "Nasci do silêncio que o grande sopro findou, Sou a primeira voz que o cosmo escutou. Não sou estrela, mas de todas sou o germe, Não sou mente, mas a ordem em mim se verte. Atravesso véus que o tempo não mede, Carrego em meu dorso o brilho que precedeToda forma, toda sombra, todo ser que se cria. Sou a essência que emana da pura alquimiaDo que foi antes, do que é agora, do que será. Em minha dança, o universo se orquestrará. Não me tocas, mas em tudo pulso e ardo, O farol primordial, o grande e eterno bardo. O que sou eu, que emana de um ponto sem fim?",
+        resposta: "Luz",
         solved: false,
       },
     ],
@@ -315,12 +318,22 @@ O que sou eu, o grande e derradeiro fim?`,
         solved: false,
       },
       {
-        id: "fauno",
+        id: "Akin",
         name: "Fauno Misterioso",
         image: "img/personagem20.png",
-        enigma:
-          "O que é, o que é: Tem pescoço e não tem cabeça, tem braços e não tem mãos?",
-        resposta: "a camisa",
+        enigma: `Não bato, mas em mim a vida se sustenta,
+Minha força é muda, minha grandeza é lenta.
+Guardo em meu interior tesouros escondidos,
+Histórias de eras, em silêncio dormidos.
+Sou base e alicerce, o chão que pisas,
+De mim nascem montes e brisas.
+Sem voz eu respiro, sem rosto eu existo,
+Em cada fibra minha, um antigo rito.
+Nutro o que cresce, recebo o que finda,
+A mãe universal, sempre clemente e linda.
+
+O que sou eu, que tudo sustenta em seu leito?`,
+        resposta: "A Terra",
         solved: false,
       },
     ],
