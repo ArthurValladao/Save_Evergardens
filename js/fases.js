@@ -244,6 +244,8 @@ O que sou eu, o grande e derradeiro fim?`,
   },
   {
     id: "acropole",
+    instruction:
+      "Decifre os enigmas apresentados por cada guardião astral para desbloquear os caminhos ocultos da Acrópole. Cada personagem guarda uma peça do conhecimento. Só com todas as respostas certas você poderá prosseguir.",
     nome: "Acrópole da Amith",
     bodyClass: "fase-3-bg",
     medalha: "🏅",
@@ -260,7 +262,7 @@ O que sou eu, o grande e derradeiro fim?`,
       {
         id: "matriarca",
         name: "Matriarca da luz",
-        image: "img/personagem14.png",
+        image: "/img/matriarcadaluz.png",
         enigma:
           "Sou berço de estrelas, névoa e cor, misturo o caos com o esplendor. No silêncio do céu, me espalho lento, tecendo o brilho, guardo o tempo. Nem sólido, nem fluido, sou ponte e véu, dissolvo a luz, obscureço o céu. Sou nuvem de sonhos, infinita beleza, criadora e túmulo, em perfeita sutileza.",
         resposta: "Nebulosa",
@@ -269,7 +271,7 @@ O que sou eu, o grande e derradeiro fim?`,
       {
         id: "oraculo",
         name: "Oráculo prismático",
-        image: "img/personagem15.png",
+        image: "/img/oraculo.png",
         enigma:
           "Sem mim, a luz é só uma cor, mas parto o mundo em múltiplo ardor. Sou ponte, sou filtro, sou arco no céu, deixo a ciência tocar o véu. Mas sou etéreo, fugaz, não tenho forma, apareço na chuva, na gota que transforma. Quem sou eu, que revelo o segredo, do espectro oculto e seu enredo?",
         resposta: "Prisma",
