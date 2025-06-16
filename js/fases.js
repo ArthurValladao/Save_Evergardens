@@ -295,34 +295,57 @@ O que sou eu, o grande e derradeiro fim?`,
     medalha: "🎖️",
     characters: [
       {
-        id: "akin",
-        name: "Akin, o Guardião",
-        image: "img/personagem17.png",
-        enigma: "Você me vê no começo da noite e no fim da manhã. O que sou?",
-        resposta: "a letra n",
+        id: "Ent",
+        name: "Ent, o Guardião",
+        image: "/img/ent.png",
+        enigma: `Tenho anéis que não enfeitam a mão,
+Mas contam histórias da terra e do chão.
+Com braços erguidos ao céu em prece,
+Abraço os ventos, ainda que apresse.
+
+Nasci antes do homem, vi reinos cair,
+Em mim o inseto se atreve a dormir.
+Sou casa e caminho, sou teto e guarida,
+Na floresta, sou alma, memória e vida.`,
+        resposta: "árvore",
         solved: false,
       },
       {
-        id: "elfo",
-        name: "Elfo da Floresta",
-        image: "img/personagem18.png",
-        enigma: "O que é, o que é: Pode-se quebrar falando?",
-        resposta: "o segredo",
+        id: "Pantera",
+        name: "Pantera da Floresta",
+        image: "/img/pantera.png",
+        enigma: `Sou voz que responde sem nunca pensar,
+Espelho do som que insiste em voltar.
+No tronco ressoa meu tom encantado,
+Mas nunca fui visto, só sou escutado.
+
+Falo o que ouço, calo no fim,
+Não tenho boca, nem corpo ou jardim.
+Na mata me escondo, sem ter paradeiro,
+Sou filho do grito, irmão do silêncio inteiro.`,
+        resposta: "eco",
         solved: false,
       },
       {
-        id: "drago",
-        name: "Dragão Pequeno",
-        image: "img/personagem19.png",
-        enigma:
-          "O que é, o que é: Anda sem ter pés, e tem um chapéu que não é de sol?",
-        resposta: "o cogumelo",
+        id: "fada",
+        name: "Fada da Terra",
+        image: "/img/Fada.png",
+        enigma: `Deslizo no verde sem corpo nem pele,
+Sou ponte silente onde o passo se atrele.
+Em dias de chuva, minha raiva se solta,
+Em dias de seca, viro linha remota.
+
+Não tenho garras, mas escavo o chão,
+Levo a floresta sem usar um caminhão.
+Nasço no alto e morro no fundo,
+Sou a veia secreta do coração do mundo.`,
+        resposta: "rio",
         solved: false,
       },
       {
         id: "Akin",
-        name: "Fauno Misterioso",
-        image: "img/personagem20.png",
+        name: "Akin, a Guardiã da Terra",
+        image: "/img/akin.png",
         enigma: `Não bato, mas em mim a vida se sustenta,
 Minha força é muda, minha grandeza é lenta.
 Guardo em meu interior tesouros escondidos,
@@ -335,7 +358,7 @@ Nutro o que cresce, recebo o que finda,
 A mãe universal, sempre clemente e linda.
 
 O que sou eu, que tudo sustenta em seu leito?`,
-        resposta: "A Terra",
+        resposta: "Terra",
         solved: false,
       },
     ],
@@ -347,37 +370,67 @@ O que sou eu, que tudo sustenta em seu leito?`,
     medalha: "🏵️",
     characters: [
       {
-        id: "ossiferno",
-        name: "Ossiferno, o Demônio",
-        image: "img/personagem21.png",
-        enigma:
-          "Tenho um pescoço mas não tenho cabeça, e uso dois braços mas não tenho mãos. O que sou?",
-        resposta: "uma camisa",
+        id: "Matheus",
+        name: "Cavaleiro Matheus, o líder do clã",
+        image: "/img/Cavaleiroazul.png",
+        enigma: `Durmo em silêncio no ventre da terra,  
+Mas basta um sopro e trago a guerra.  
+Devoro a floresta com língua cruel,  
+E deixo no chão só cinza e fel.  
+  
+Sou filha do vento e do estopim,  
+Brilho na noite como um clarim.  
+Quem me invoca nem sempre me doma,  
+Pois queimo o fraco e forjo a soma.`,
+        resposta: "o fogo",
         solved: false,
       },
       {
-        id: "golem",
-        name: "Golem de Pedra",
-        image: "img/personagem22.png",
-        enigma: "O que é, o que é: Tem casa, mas mora fora dela?",
-        resposta: "o caracol",
+        id: "Frederick",
+        name: "Frederick, o cerebro do clã",
+        image: "/img/Cavaleiroverde.png",
+        enigma: `Com escamas de noite e olhar ancestral,  
+Trago no peito um sol infernal.  
+Voando sem asas que homem entenda,  
+Sou mito que ruge e montanha que estenda.  
+  
+Onde passo, o medo floresce,  
+E até a coragem se desvanece.  
+Guardião de tesouros, relíquia e aço,  
+Meu nome é lenda, poder e traço.`,
+        resposta: "o dragão",
         solved: false,
       },
       {
-        id: "salamandra",
-        name: "Salamandra Ígnea",
-        image: "img/personagem23.png",
-        enigma: "O que é, o que é: Tem bacha, mas não tem boca?",
-        resposta: "a chaleira",
+        id: "Miranda",
+        name: "Miranda, a alquimista",
+        image: "/img/Cavaleirabranca.png",
+        enigma: `Não tenho carne, mas vivo a pulsar,  
+No ferro escondido, me ponho a morar.  
+O homem me busca pra moldar o aço,  
+Mas se errar o pulso, viro fracasso.  
+  
+Meu brilho é vermelho, meu toque é mortal,  
+Sem corpo ou rosto, sou sempre vital.  
+E mesmo invisível, posso existir —  
+Dentro do fornalha, só sei consumir.`,
+        resposta: "a brasa",
         solved: false,
       },
       {
-        id: "furia",
-        name: "Fúria Elemental",
-        image: "img/personagem24.png",
-        enigma:
-          "O que é, o que é: Se você me tem, quer me dividir; se me divide, não me tem mais?",
-        resposta: "o segredo",
+        id: "Melissa",
+        name: "Mel, a escolhida da cleopatra",
+        image: "/img/Cavaleiravermelha.png",
+        enigma: `Nasci do silêncio entre as rochas fundidas,  
+Mas hoje sou arma das feras vencidas.  
+Não sou vento, mas venho com força,  
+E por onde passo, tudo se torça.  
+  
+Não tenho veneno, mas corro a ferir,  
+Com meu hálito posso ruínas abrir.  
+Quem me possui não o faz por razão,  
+Pois sou a alma em combustão.`,
+        resposta: "o sopro do dragão",
         solved: false,
       },
     ],
@@ -392,47 +445,46 @@ O que sou eu, que tudo sustenta em seu leito?`,
         id: "ningyo",
         name: "Ningyo, a Guardiã",
         image: "img/personagem25.png",
-        enigma: "Quanto mais você compartilha, mais você tem. O que é?",
-        resposta: "conhecimento",
+        enigma: `Não tenho pulmões, mas canto ao luar,  
+E faço marujos sonharem sem par.  
+Com olhos de espuma e riso de sal,  
+Encanto e destruo sem toque fatal.`,
+        resposta: "a sereia",
         solved: false,
       },
       {
         id: "leviathan",
         name: "Leviathan Profundo",
         image: "img/personagem26.png",
-        enigma: "O que é, o que é: Tem linha, mas não costura?",
-        resposta: "o anzol",
+        enigma: `Sou leve e caio com força ou ternura,  
+Às vezes benção, às vezes tortura.  
+Desenho nos lagos pequenos segredos,  
+E alimento a vida em campos e dedos.`,
+        resposta: "a chuva",
         solved: false,
       },
       {
-        id: "polvo",
-        name: "Polvo Gigante",
+        id: "lago",
+        name: "Lago Espelhado",
         image: "img/personagem27.png",
-        enigma: "O que é, o que é: Está sempre no meio do caminho?",
-        resposta: "a letra h",
+        enigma: `Sou clara ou turva, conforme o luar,  
+Reflito teu rosto sem te julgar.  
+Mudo com o vento, mas sou sempre fiel,  
+Guardo segredos sob meu véu.`,
+        resposta: "o lago",
         solved: false,
       },
       {
-        id: "peixe",
-        name: "Peixe Abissal",
+        id: "mar",
+        name: "Mar, o Infinito",
         image: "img/personagem28.png",
-        enigma: "O que é, o que é: Entra na água e não se molha?",
-        resposta: "a sombra",
+        enigma: `Não paro jamais, mas nunca corro,  
+Levo navios, afundo o morro.  
+Sou estrada sem margens, sem fim definido,  
+Escondo riquezas e gritos perdidos.`,
+        resposta: "o mar",
         solved: false,
       },
-    ],
-  },
-  {
-    id: "final",
-    nome: "Aterum Final",
-    bodyClass: "fase-7-bg", // Classe de fundo para o boss
-    medalha: "🏆", // Medalha final, ou apenas mensagem de vitória
-    isBossFase: true, // Nova flag para indicar fase de boss
-    dialogo: "Chegaram longe... mas não vencerão!",
-    opcoes: [
-      // Opções de diálogo para o boss (do seu código original)
-      { texto: "Lutamos com a verdade!", correta: false },
-      { texto: "Temos os resgatados do nosso lado!", correta: true },
     ],
   },
 ];
