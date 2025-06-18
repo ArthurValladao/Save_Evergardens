@@ -293,6 +293,8 @@ O que sou eu, o grande e derradeiro fim?`,
     nome: "Floresta de Akin",
     bodyClass: "fase-4-bg",
     medalha: "🎖️",
+    instruction:
+      "Explore a floresta e resolva os enigmas dos guardiões da natureza. Cada resposta certa revela um novo caminho. Lembre-se, a natureza fala em versos e rimas.",
     characters: [
       {
         id: "Ent",
@@ -368,6 +370,8 @@ O que sou eu, que tudo sustenta em seu leito?`,
     nome: "Vulcão de Ossiferno",
     bodyClass: "fase-5-bg",
     medalha: "🏵️",
+    instruction:
+      "Encontre os guardiões do vulcão e resolva seus enigmas. Cada resposta certa revela o poder oculto do fogo. Mas cuidado, o fogo é tanto amigo quanto inimigo.",
     characters: [
       {
         id: "Matheus",
@@ -440,6 +444,8 @@ Pois sou a alma em combustão.`,
     nome: "Abismo de Ningyo",
     bodyClass: "fase-6-bg",
     medalha: "🏅",
+    instruction:
+      "Mergulhe nas profundezas do abismo e encontre os guardiões das águas. Cada resposta certa revela os segredos ocultos do oceano. Mas cuidado, as águas guardam mistérios perigosos.",
     characters: [
       {
         id: "Hanna",
