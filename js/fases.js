@@ -21,7 +21,7 @@ const fases = [
       {
         id: "Eco2",
         name: "Segundo Eco",
-        image: "/img/Eco2.png",
+        image: "./img/Eco2.png",
         enigma:
           " O segundo número é a soma entre o primeiro e o número de vértices de um cubo.",
         resposta: "17",
@@ -30,7 +30,7 @@ const fases = [
       {
         id: "Eco3",
         name: "Terceiro Eco",
-        image: "/img/Eco3.png",
+        image: "./img/Eco3.png",
         enigma:
           "O terceiro número é igual a diferença entre o segundo e o número de patas de uma aranha.",
         resposta: "9",
@@ -39,7 +39,7 @@ const fases = [
       {
         id: "eco4",
         name: "Quarto Eco",
-        image: "/img/Eco4.png",
+        image: "./img/Eco4.png",
         enigma:
           " O quarto número é o número primo mais próximo (e menor) da soma dos três primeiros.",
         resposta: "31",
@@ -48,7 +48,7 @@ const fases = [
       {
         id: "Bau",
         name: "Ramses",
-        image: "/img/Bau.png",
+        image: "./img/Bau.png",
         enigma: "Um dos ecos mente, qual a senha para abrir o baú?",
         resposta: "807",
         solved: false,
@@ -66,7 +66,7 @@ const fases = [
       {
         id: "carta1",
         name: "Primeira Carta",
-        image: "/img/Carta 1.png",
+        image: "./img/Carta 1.png",
         enigma: `O desafio que vou cantar,
 conta sobre sete dias sem parar.
 sete estrelas para observar,
@@ -87,7 +87,7 @@ do ar!`,
       {
         id: "carta2",
         name: "Segunda Carta",
-        image: "/img/Carta 2.png",
+        image: "./img/Carta 2.png",
         enigma: `se pudesse te dizer o que penso,
 cantaria sobre o vento,
 sobre o amor roubado pelo tempo,
@@ -115,7 +115,7 @@ com toda certeza sempre virá do ar.`,
       {
         id: "carta3",
         name: "Terceira Carta",
-        image: "/img/Carta 3.png",
+        image: "./img/Carta 3.png",
         enigma: `se as penas já possui,
 perceba como a carruagem flui.
 mas não uma qualquer,
@@ -133,7 +133,7 @@ sete dias, sete de montões!`,
       {
         id: "icarus",
         name: "Ícaro",
-        image: "/img/Icaro.png",
+        image: "./img/Icaro.png",
         enigma: `Não se pode ver, mas se pode sentir,  
 dança nas folhas, faz o som existir.  
 Está em todo lugar, sem se revelar,  
@@ -159,7 +159,7 @@ diz então, o que é sem se mostrar?`,
       {
         id: "lapide",
         name: "Primeira Lápide",
-        image: "/img/Lapide.png",
+        image: "./img/Lapide.png",
         enigma: `Com passos lentos, em solene cortejo,
 As almas se unem num último ensejo.
 Vestes escuras, rostos molhados de pranto,
@@ -180,7 +180,7 @@ Que solene passagem, a humanidade celebra em dor?`,
       {
         id: "lapide2",
         name: "Segunda Lápide",
-        image: "/img/Lapide.png",
+        image: "./img/Lapide.png",
         enigma: `Sou um livro sem páginas, mas com mil histórias,
 Escritas em lágrimas, cheias de glórias.
 Não tenho cheiro, mas trago o aroma de quem se foi,
@@ -199,7 +199,7 @@ O que sou eu, esse peso que o coração abriga?`,
       {
         id: "Lapide3",
         name: "Terceiro Lápide",
-        image: "/img/Lapide.png",
+        image: "./img/Lapide.png",
         enigma: `No vazio que deixaste, uma melodia paira, 
 Um cântico triste, que o vento desvaira. 
 Não sou sombra, mas preencho o espaço que outrora 
@@ -220,7 +220,7 @@ Que sentimento sou eu, que tece a teia da dor?`,
       {
         id: "Dama",
         name: "Dama de vermelho",
-        image: "/img/Dama.png",
+        image: "./img/Dama.png",
         enigma: `Não tenho forma, mas transformo o que é visto, 
 Em pó e silêncio, num leito previsto. 
 Sou o véu que desce, a noite sem estrelas, 
@@ -253,7 +253,7 @@ O que sou eu, o grande e derradeiro fim?`,
       {
         id: "Aiolos",
         name: "Aiolos, o Guardião",
-        image: "/img/Aiolo.png",
+        image: "./img/Aiolo.png",
         enigma:
           "não anda, mas guia. não fala, mas brilha. milhares me seguem, sem saber meu nome, sou velha como o tempo, sou voz de um enorme. nas noites, sou manto, sou verso, sou rastro, desenho caminhos em silêncio vasto. alguns dizem sorte, outros dizem sinal, mas quem me lê, conhece o astral.",
         resposta: "Constelação",
@@ -262,7 +262,7 @@ O que sou eu, o grande e derradeiro fim?`,
       {
         id: "matriarca",
         name: "Matriarca da luz",
-        image: "/img/matriarcadaluz.png",
+        image: "./img/matriarcadaluz.png",
         enigma:
           "Sou berço de estrelas, névoa e cor, misturo o caos com o esplendor. No silêncio do céu, me espalho lento, tecendo o brilho, guardo o tempo. Nem sólido, nem fluido, sou ponte e véu, dissolvo a luz, obscureço o céu. Sou nuvem de sonhos, infinita beleza, criadora e túmulo, em perfeita sutileza.",
         resposta: "Nebulosa",
@@ -271,7 +271,7 @@ O que sou eu, o grande e derradeiro fim?`,
       {
         id: "oraculo",
         name: "Oráculo prismático",
-        image: "/img/oraculo.png",
+        image: "./img/oraculo.png",
         enigma:
           "Sem mim, a luz é só uma cor, mas parto o mundo em múltiplo ardor. Sou ponte, sou filtro, sou arco no céu, deixo a ciência tocar o véu. Mas sou etéreo, fugaz, não tenho forma, apareço na chuva, na gota que transforma. Quem sou eu, que revelo o segredo, do espectro oculto e seu enredo?",
         resposta: "Prisma",
@@ -280,7 +280,7 @@ O que sou eu, o grande e derradeiro fim?`,
       {
         id: "amith",
         name: "Amith, a Sábia",
-        image: "/img/Amith.png",
+        image: "./img/Amith.png",
         enigma:
           "Nasci do silêncio que o grande sopro findou, Sou a primeira voz que o cosmo escutou. Não sou estrela, mas de todas sou o germe, Não sou mente, mas a ordem em mim se verte. Atravesso véus que o tempo não mede, Carrego em meu dorso o brilho que precedeToda forma, toda sombra, todo ser que se cria. Sou a essência que emana da pura alquimiaDo que foi antes, do que é agora, do que será. Em minha dança, o universo se orquestrará. Não me tocas, mas em tudo pulso e ardo, O farol primordial, o grande e eterno bardo. O que sou eu, que emana de um ponto sem fim?",
         resposta: "Luz",
@@ -299,7 +299,7 @@ O que sou eu, o grande e derradeiro fim?`,
       {
         id: "Ent",
         name: "Ent, o Guardião",
-        image: "/img/ent.png",
+        image: "./img/ent.png",
         enigma: `Tenho anéis que não enfeitam a mão,
 Mas contam histórias da terra e do chão.
 Com braços erguidos ao céu em prece,
@@ -315,7 +315,7 @@ Na floresta, sou alma, memória e vida.`,
       {
         id: "Pantera",
         name: "Pantera da Floresta",
-        image: "/img/pantera.png",
+        image: "./img/pantera.png",
         enigma: `Sou voz que responde sem nunca pensar,
 Espelho do som que insiste em voltar.
 No tronco ressoa meu tom encantado,
@@ -331,7 +331,7 @@ Sou filho do grito, irmão do silêncio inteiro.`,
       {
         id: "fada",
         name: "Fada da Terra",
-        image: "/img/Fada.png",
+        image: "./img/Fada.png",
         enigma: `Deslizo no verde sem corpo nem pele,
 Sou ponte silente onde o passo se atrele.
 Em dias de chuva, minha raiva se solta,
@@ -347,7 +347,7 @@ Sou a veia secreta do coração do mundo.`,
       {
         id: "Akin",
         name: "Akin, a Guardiã da Terra",
-        image: "/img/akin.png",
+        image: "./img/akin.png",
         enigma: `Não bato, mas em mim a vida se sustenta,
 Minha força é muda, minha grandeza é lenta.
 Guardo em meu interior tesouros escondidos,
@@ -376,7 +376,7 @@ O que sou eu, que tudo sustenta em seu leito?`,
       {
         id: "Matheus",
         name: "Cavaleiro Matheus, o líder do clã",
-        image: "/img/Cavaleiroazul.png",
+        image: "./img/Cavaleiroazul.png",
         enigma: `Durmo em silêncio no ventre da terra,  
 Mas basta um sopro e trago a guerra.  
 Devoro a floresta com língua cruel,  
@@ -392,7 +392,7 @@ Pois queimo o fraco e forjo a soma.`,
       {
         id: "Frederick",
         name: "Frederick, o cerebro do clã",
-        image: "/img/Cavaleiroverde.png",
+        image: "./img/Cavaleiroverde.png",
         enigma: `Com escamas de noite e olhar ancestral,  
 Trago no peito um sol infernal.  
 Voando sem asas que homem entenda,  
@@ -408,7 +408,7 @@ Meu nome é lenda, poder e traço.`,
       {
         id: "Miranda",
         name: "Miranda, a alquimista",
-        image: "/img/Cavaleirabranca.png",
+        image: "./img/Cavaleirabranca.png",
         enigma: `Não tenho carne, mas vivo a pulsar,  
 No ferro escondido, me ponho a morar.  
 O homem me busca pra moldar o aço,  
@@ -424,7 +424,7 @@ Dentro do fornalha, só sei consumir.`,
       {
         id: "Melissa",
         name: "Mel, a escolhida da cleopatra",
-        image: "/img/Cavaleiravermelha.png",
+        image: "./img/Cavaleiravermelha.png",
         enigma: `Nasci do silêncio entre as rochas fundidas,  
 Mas hoje sou arma das feras vencidas.  
 Não sou vento, mas venho com força,  
@@ -450,7 +450,7 @@ Pois sou a alma em combustão.`,
       {
         id: "Hanna",
         name: "Hannuxa, a guardiã do abismo",
-        image: "/img/sereia.png",
+        image: "./img/sereia.png",
         enigma: `Não tenho pulmões, mas canto ao luar,  
 E faço marujos sonharem sem par.  
 Com olhos de espuma e riso de sal,  
@@ -461,7 +461,7 @@ Encanto e destruo sem toque fatal.`,
       {
         id: "Sereia",
         name: "Manua",
-        image: "/img/sereiamanu.png",
+        image: "./img/sereiamanu.png",
         enigma: `Sou leve e caio com força ou ternura,  
 Às vezes benção, às vezes tortura.  
 Desenho nos lagos pequenos segredos,  
@@ -472,7 +472,7 @@ E alimento a vida em campos e dedos.`,
       {
         id: "polvo",
         name: "polvo abissal",
-        image: "/img/polvo.png",
+        image: "./img/polvo.png",
         enigma: `Sou clara ou turva, conforme o luar,  
 Reflito teu rosto sem te julgar.  
 Mudo com o vento, mas sou sempre fiel,  
@@ -483,7 +483,7 @@ Guardo segredos sob meu véu.`,
       {
         id: "orni",
         name: "ornitorrinco abissal",
-        image: "/img/orninto.png",
+        image: "./img/orninto.png",
         enigma: `Não paro jamais, mas nunca corro,  
 Levo navios, afundo o morro.  
 Sou estrada sem margens, sem fim definido,  
