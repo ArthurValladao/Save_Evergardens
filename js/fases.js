@@ -12,7 +12,7 @@ const fases = [
       {
         id: "Eco1",
         name: "Primeiro Eco",
-        image: "/img/Eco1.png", // Imagem do personagem
+        image: "./img/Eco1.png", // Imagem do personagem
         enigma:
           "O primeiro número é o mesmo que o número de letras da palavra 'one' multiplicado pelo número de lados de um triângulo.",
         resposta: "9",
